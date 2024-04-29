@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+  }
+  
+  .test {
+    width: 40%;
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  

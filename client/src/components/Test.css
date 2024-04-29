@@ -1,0 +1,33 @@
+
+  .test-container{
+    /* width: 350px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    height: 100%; /* Adjust the height to cover the full viewport height */
+    overflow-y: auto;/* Enable vertical scrolling if content exceeds viewport */
+    /* z-index: 100; Ensure sidebar stays on top of other elements */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .table-container {
+    margin-bottom: 20px;
+    width: 100%; /* Set width to 30% */
+  }
+  
+  .table-container table {
+    width: 100%;
+  }
+  
+  .table-container th,
+  .table-container td {
+    padding: 12px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+  }
+  

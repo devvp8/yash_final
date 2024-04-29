@@ -1,0 +1,424 @@
+.home-container {
+  
+  background: linear-gradient(-45deg,#415800,#e560dc,#ffb374,#ef5f5f,#d840b6);
+  animation: bg 12s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text-container {
+  text-align: center;
+  color: #f5f5f5; /* Light gray text color */
+  padding-left: 1px;
+}
+
+.main-heading {
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+td{
+  padding: 50px;
+}
+
+.sub-heading {
+  color: black;
+  font-size: 34px;
+}
+
+.buttons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 10px 20px;
+  font-size: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  color: #f5f5f5; /* Light gray text color */
+  transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.primary-button:hover {
+  background-color: #901cb7; /* Darker green color on hover */
+}
+
+.secondary-button:hover {
+  background-color: #357a38; /* Darker red color on hover */
+}
+
+.primary-button {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for the button */
+}
+
+.secondary-button {
+  background-color: rgba(0, 0, 0, 0.5); /* Red color for secondary button */
+}
+
+.image-container {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.home-image {
+  width: 550px; /* Adjust the width of the image as needed */
+  height: auto;
+  border-radius: 30px;
+  padding-top: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF7ED;
+  font-family: "Inter", sans-serif;
+  
+  /* overflow: hidden; Hide main scrollbar */
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.site-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+header {
+  /* height: 110px; */
+  display: flex;
+  align-items: center;
+  padding-block: 10px;
+  /* flex-wrap: wrap; */
+  background-color: #161616;
+  color: #AAAAAA;
+  z-index: 100;
+}
+
+header .site-logo {
+  color: #f8f8f8;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+header a {
+  text-decoration: none;
+  /* color: #4D4D4D; */
+  font-weight: 600;
+  padding: 5px 20px;
+}
+
+header a:hover {
+  /* color: #161616; */
+  text-decoration: underline;
+}
+
+header .login-icon {
+  height: 18px;
+  width: 18px;
+}
+
+header .login-link {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+/* main {
+  margin-bottom: 84px;
+} */
+
+footer {
+  background-color: #161616;
+  color: #AAAAAA;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-weight: 500;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+.link-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: .75rem 1.375rem;
+  color: initial;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .1s ease-in-out;
+}
+
+.back-button {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-left: 26px;
+}
+
+.back-button span:hover {
+  text-decoration: underline;
+}
+
+.link-button:hover {
+  transform: translate(1px, 1px);
+}
+
+/*InputOutput Page*/
+
+.side-bar-container
+{
+  /* width: 350px; */
+  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  /* padding-top: 20px; */
+  height: 100%; /* Adjust the height to cover the full viewport height */
+  overflow-y: visible; /* Enable vertical scrolling if content exceeds viewport */
+  /* z-index: 100; Ensure sidebar stays on top of other elements */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.app {
+  font-family: sans-serif;
+  /* margin: 0; */
+  /* padding: 0; */
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  /* margin-left: 250px; */
+  /* padding: 20px; */
+  /* height: calc(100vh - 140px); Subtract height of header and footer */
+  overflow-y: auto; /* Enable scrollbar for content */
+  overflow-x: auto;
+  flex-wrap: wrap;
+  z-index: -3;
+}
+
+.header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+  /* text-decoration: overline rgb(0, 0, 0) 6px; */
+  text-shadow: 0px -1px 1px black;
+  background-color: #aaaaaa57;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.281);
+}
+
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex: 1; */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  z-index: -3;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.output-query-container
+{
+  text-align: center;
+  margin: 60px;
+}
+
+.result-query
+{
+  background-color: rgba(157, 231, 97, 0.596);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chat-container {
+  margin-top: auto;
+  text-align: center;
+  z-index: 3;
+}
+
+.chat-input,
+.chat-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  /* cursor: not-allowed; */
+  height: 40px;
+}
+
+.chat-input
+{
+  width: 80%;
+}
+
+.chat-button {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.chat-button:hover
+{
+  cursor: pointer;
+}
+
+.query-and-button-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.query-container {
+  flex: 1;
+  z-index: 3;
+}
+
+.test-query-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 20px; /* Adjust the spacing between the query and the button */
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.test-query-button:hover {
+  background-color: #45a049;
+}
+
+.test-query-button:active {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 300px) {
+  .side-bar-container {
+    display: none; /* Hide sidebar */
+  }
+  .app {
+    margin-left: 0; /* Adjust main content margin */
+  }
+}
+
+/*CODE GENERATOR PAGE*/
+
+.container {
+  display: flex;
+  height: 100vh; /* Adjust height as needed */
+  position: relative;
+}
+
+.left-section, .right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  overflow-y: auto; /* Add scroll if content overflows vertically */
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  width: 6px; /* Width of the slider */
+  height: 100%;
+  background-color: #007bff; /* Slider handle color */
+  cursor: ew-resize; /* Cursor type for horizontal resize */
+}
+
+/* Optional: Style the slider handle */
+.slider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px; /* Width of the handle */
+  height: 12px; /* Height of the handle */
+  background-color: white; /* Handle color */
+  border: 1px solid #007bff; /* Border color */
+  border-radius: 50%; /* Rounded handle */
+}
+
+.table-input-field{
+  background-color: whitesmoke;
+}
